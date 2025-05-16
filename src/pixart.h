@@ -28,7 +28,7 @@ struct pixart_data {
     int32_t ball_action_delta_x;
     int32_t ball_action_delta_y;
 
-#ifdef CONFIG_PMW3610_POLLING_RATE_125_SW
+#ifdef CONFIG_PMW3360_POLLING_RATE_125_SW
     int64_t last_poll_time;
     int16_t last_x;
     int16_t last_y;
@@ -48,7 +48,7 @@ struct pixart_data {
     bool last_read_burst; // todo: needed?
     int err;              // error code during async init
 
-    // for pmw3610 smart algorithm
+    // for pmw3360 smart algorithm
     bool sw_smart_flag;
 };
 
